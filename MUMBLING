@@ -1,0 +1,7 @@
+def accum(s):
+    text = ""
+    for x, y in enumerate(s):
+        text += y.upper() + y.lower() * x
+        if x < len(s) - 1:
+            text += "-"
+    return text
