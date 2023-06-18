@@ -1,0 +1,11 @@
+from collections import Counter
+
+def scramble(s1, s2):
+    count_s1 = Counter(s1)
+    count_s2 = Counter(s2)
+
+    for char, freq in count_s2.items():
+        if freq > count_s1[char]:
+            return False
+
+    return True
