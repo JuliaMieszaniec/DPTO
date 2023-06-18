@@ -1,0 +1,10 @@
+import re
+def solution(s):
+    x = re.findall(r'.{1,2}', s)
+    if len(s)%2==0:
+        return x
+    elif len(s)==0:
+        return x.clear
+    else:
+        x[-1]+='_'  
+        return x
