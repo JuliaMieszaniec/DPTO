@@ -1,0 +1,7 @@
+def reverse_seq(n):
+    array=[]
+    while n>0:
+        array.append(n)
+        n-=1
+    return(array)
+    
