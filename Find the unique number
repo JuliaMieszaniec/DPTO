@@ -1,0 +1,7 @@
+def find_uniq(arr):
+    array=sorted(arr)
+    if array[0]==array[1]:
+        return array[-1]
+    else:
+        return array[0]
+        
