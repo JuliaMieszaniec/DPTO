@@ -1,0 +1,12 @@
+def add_binary(a,b):
+    n=a+b
+    binary_no = 0
+    x = 0
+    while (n != 0):
+        rem = n % 2
+        c = pow(10, x)
+        binary_no += rem * c
+        n //= 2
+         
+        x += 1
+    return str(binary_no)
