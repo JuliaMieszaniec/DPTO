@@ -1,0 +1,8 @@
+def number(lines):
+    array=[]
+    no=1
+    for l in lines:
+        text= str(no)+ ": " + l
+        array.append(text)
+        no+=1
+    return array
