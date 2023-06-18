@@ -1,0 +1,16 @@
+def reverse_number(n, b):
+    if b == 1:
+        return n
+
+    if n == 0:
+        return 0
+
+    reversed_num = 0
+    power = 0
+
+    while n > 0:
+        reversed_num = reversed_num * b + (n % b)
+        n //= b
+        power += 1
+
+    return reversed_num
