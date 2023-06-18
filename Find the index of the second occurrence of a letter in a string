@@ -1,0 +1,10 @@
+def second_symbol(s, symbol):
+    index1 = s.find(symbol)
+    if index1 == -1:
+        return -1
+
+    index2= s.find(symbol, index1 + 1)
+    if index2 == -1:
+        return -1
+
+    return index2
