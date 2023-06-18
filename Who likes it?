@@ -1,0 +1,17 @@
+def likes(names):
+    text=""
+    if len(names)==1:
+        text+=str(names[0])+" likes this"
+    elif len(names)==0:
+        text+="no one likes this"
+    elif len(names)==2:
+        text+=(names[0])+ " and "+(names[1])+ " like this"
+    elif len(names)==3:
+        text+=(names[0])+ ", "+(names[1])+ " and " + (names[2])+ " like this"
+    else:
+        text+=(names[0])+ ", "+(names[1])+ " and "+ str((len(names)-2)) +" others like this"
+        
+    print(text)
+
+
+    return (text)
