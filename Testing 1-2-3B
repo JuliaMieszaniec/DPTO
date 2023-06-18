@@ -1,0 +1,12 @@
+
+def number(lines):
+    number=1
+    list=[]
+    text=""
+    while number<=len(lines):
+        for l in lines:
+            text+= str(number)+": "+str(l)
+            list.append(text)
+            text=""
+            number+=1
+    return list
