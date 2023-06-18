@@ -1,0 +1,8 @@
+def unique_in_order(sequence):
+    array=[]
+    last_element= None
+    for s in sequence:
+        if s != last_element:
+            array.append(s)
+            last_element=s
+    return array
